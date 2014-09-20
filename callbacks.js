@@ -1,4 +1,9 @@
 //Make the following function calls work
+
+var brain = function(name, cb) {
+	cb(name);
+}
+
   giveItName('name', function(){
     alert('Your name is ' + name);
   });
