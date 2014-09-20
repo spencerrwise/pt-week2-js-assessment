@@ -1,4 +1,4 @@
-//Create a function called User which has the following properties
+//Create a object called User which has the following properties
 //username, email, password, birthday
 
 var user = {
@@ -33,3 +33,8 @@ var values = [];
 for (var key in user){
 	values.push(user[key]);
 }
+
+
+
+
+

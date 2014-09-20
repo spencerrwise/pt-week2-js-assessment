@@ -1,12 +1,17 @@
 //Make the following function calls work
 
-var brain = function(name, cb) {
-	cb(name);
+var giveItName = function(nam, cb) {
+	cb(nam);
 }
 
-  giveItName('name', function(){
+giveItName('Spencer', function(name){
     alert('Your name is ' + name);
-  });
+ });
+
+
+var areEvens = function (list, cb){
+	cb(list)
+}
 
   var nums = [2,4,5,6];
   //returns true if all items in the array are evens.
