@@ -1,10 +1,15 @@
 //Write a function called 'welcome' that takes in a name (say Tyler), and then returns 'Welcome, Tyler' (or whatever the name was).
 
-  //Function definition here
+//Function definition here
+
+var welcome = function(name){
+  alert("Welcome " + name);
+}
 
 
   //Call the function here
 
+welcome('Spencer')
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
@@ -14,9 +19,13 @@
 
   //Function definition here
 
+var multiply = function(num1, num2){
+  return num1 * num2;
+}
 
   //Call the function here
 
+multiply(5,2)
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
@@ -33,7 +42,17 @@
     obj.evens ----> [2,4,6];
     obj.odds ----> [1,3,5]
 */
-  
+
+var numArray =  [1,2,3,4,5,6];
+var obj = {
+  evens: [2,4,6],
+  odds: [1,3,5]
+}
+
+var dice = function(arr){
+  return obj;
+
+}
   
 
 /* we have an i5 processor and are currious as to what cores are needed when we are playing Minecraft.
@@ -61,3 +80,13 @@ var processors = [{
     inUse: false,
     output: 670
 }];
+
+//NOT SURE WHY IT ISN'T LOOPING ALL THE WAY THROUGH THE ARRAY, WILL COME BACK IF I HAVE TIME
+
+var minecraft = function(arr){
+  for (var i = 0; i< arr.length; i++){
+      if (arr[i].inUse === true){
+      return arr[i].output;
+    }
+  }
+}
