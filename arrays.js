@@ -1,29 +1,36 @@
 //create an array called family which has your family members in order of their age
 
-  //code here
+var family = ['Alph','Brig','Josh','Aaron','KC','Spencer','Talmage'];
 
 
 
 //Remove the oldest member of your family
 
-  //code here
+family.shift();
 
 
 
 //Add a new family member as the youngest member
 
-  //code here
+family.pop();
 
 
 //LOOP over your array to see if you have a family member named 'Tyler'
 // If you do, alert ('I have a Tyler'), if you do not, alert ('I have no Tylers')
 
-  //Code here
+for (var i = 0; i < family.length; i++){
+	if(i === 'Tyler'){
+		alert("I Have a Tyler");
+	}
+	else {
+		alert("I have no Tylers");
+	}
+}
 
 
 // Remove the second oldest member of your family
 
-  //Code here
+family.splice(1,1);
 
 
 
@@ -31,4 +38,10 @@
 
   //Function definition here
 
+  var reverse = function(word){
+  	return word.split('').reverse().join('');
+  }
+
   //Call the function here
+
+  reverse('Monkey');
