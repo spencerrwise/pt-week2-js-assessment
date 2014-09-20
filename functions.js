@@ -82,11 +82,14 @@ var processors = [{
 }];
 
 //NOT SURE WHY IT ISN'T LOOPING ALL THE WAY THROUGH THE ARRAY, WILL COME BACK IF I HAVE TIME
+// TOTALED IT! DONESKIES
 
 var minecraft = function(arr){
+  var total = 0;
   for (var i = 0; i< arr.length; i++){
-      if (arr[i].inUse === true){
-      return arr[i].output;
-    }
-  }
-}
+      if (arr[i].inUse){
+      total += arr[i].output;
+    };
+  };
+  return total;
+};
